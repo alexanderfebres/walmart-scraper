@@ -18,6 +18,7 @@ from models import Product, Review
 from decorators import error_handler
 from utils import filter_reviews_by_date, save_to_json
 from decouple import config
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Suppress only the single InsecureRequestWarning from urllib3 needed
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -56,7 +57,8 @@ def fetch_reviews_data(url: str) -> List[Dict[str, Any]]:
     logging.info(f"Fetching reviews data from {url}")
     reviews = []
     page = 1
-    while True:
+
+    def fetch_page(page: int) -> List[Dict[str, Any]]:
         logging.info(f"Fetching page {page} of reviews")
         response = requests.get(
             url=url,
@@ -65,7 +67,7 @@ def fetch_reviews_data(url: str) -> List[Dict[str, Any]]:
             verify=False,
         )
         response.raise_for_status()
-        page_reviews = (
+        return (
             response.json()[1]
             .get("props", {})
             .get("pageProps", {})
@@ -74,12 +76,23 @@ def fetch_reviews_data(url: str) -> List[Dict[str, Any]]:
             .get("reviews", {})
             .get("customerReviews", [])
         )
-        if not page_reviews:
-            logging.info("No more reviews found")
-            break
 
-        reviews.extend(page_reviews)
-        page += 1
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        while True:
+            futures = [executor.submit(fetch_page, page + i) for i in range(10)]
+            page_reviews_list = [future.result() for future in as_completed(futures)]
+
+            # Flatten the list of lists
+            page_reviews = [
+                review for sublist in page_reviews_list for review in sublist
+            ]
+
+            if not page_reviews:
+                logging.info("No more reviews found")
+                break
+
+            reviews.extend(page_reviews)
+            page += 10
 
     logging.info("Reviews data fetched successfully")
     return reviews
