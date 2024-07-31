@@ -27,7 +27,6 @@ PRODUCT_URL = (
 )
 REVIEWS_URL = "https://www.walmart.com/reviews/product/604599575"
 
-# Load secrets from .env file
 API_KEY = config("API_KEY")
 PROXY = config("PROXY")
 
