@@ -11,11 +11,16 @@ The module performs the following tasks:
 
 import requests
 import logging
+import urllib3
+
 from typing import List, Dict, Any
 from models import Product, Review
 from decorators import error_handler
 from utils import filter_reviews_by_date, save_to_json
 from decouple import config
+
+# Suppress only the single InsecureRequestWarning from urllib3 needed
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -27,9 +32,7 @@ PRODUCT_URL = (
 )
 REVIEWS_URL = "https://www.walmart.com/reviews/product/604599575"
 
-API_KEY = config("API_KEY")
 PROXY = config("PROXY")
-
 PROXIES = {"http": PROXY, "https": PROXY}
 
 
@@ -77,7 +80,10 @@ def fetch_reviews_data(url: str) -> List[Dict[str, Any]]:
 
         reviews.extend(page_reviews)
         page += 1
-        break
+
+        if page == 10:
+            break
+
     logging.info("Reviews data fetched successfully")
     return reviews
 
@@ -88,18 +94,18 @@ def main():
     reviews_data = fetch_reviews_data(REVIEWS_URL)
 
     logging.info("Filtering reviews by date")
-    filtered_reviews = filter_reviews_by_date(
-        reviews_data,
-        start_date="2022-01-01",
-    )
-
-    product_data["reviews"] = reviews_data
+    product_data["reviews"] = [
+        Review(**review)
+        for review in filter_reviews_by_date(
+            reviews_data,
+            start_date="2022-01-01",
+        )
+    ]
 
     logging.info("Creating Product object")
-    product_data["reviews"] = [Review(**review) for review in filtered_reviews]
     product = Product(**product_data)
 
-    logging.info("Saving product data to CSV and JSON")
+    logging.info("Saving product data to JSON")
     save_to_json(product.model_dump(), "product_data.json")
     logging.info("Product data saved successfully")
 
