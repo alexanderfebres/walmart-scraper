@@ -1,0 +1,182 @@
+[
+  {
+    "authorId": "40a099598c5b16da4868059d4c4467bc49ef965560071255ba2e39ec455649634f7c3101a160302a8967ff5c7f4ce5b2",
+    "badges": [
+      {
+        "badgeType": "Custom",
+        "contentType": "REVIEW",
+        "id": "VerifiedPurchaser",
+        "glassBadge": {
+          "id": "VerifiedPurchaser",
+          "text": "Verified Purchase"
+        }
+      }
+    ],
+    "userLocation": null,
+    "negativeFeedback": 2,
+    "positiveFeedback": 18,
+    "rating": 5,
+    "recommended": true,
+    "reviewId": "248605906",
+    "reviewSubmissionTime": "12/31/2020",
+    "reviewText": "Awesome sound quality, the build is solid, and the price is right...no pun intended!!! \nLoL\nWhen connecting the headphones with your device, it's VERY quick and syncs easily. Battery life is really good, but the only downside...Apple didn't include a Charging Brick!!! The Cable is in the package, but NO Brick!",
+    "reviewTitle": "Finally got the Beats!!!",
+    "reviewAspectStart": null,
+    "reviewAspectEnd": null,
+    "reviewSentimentStart": null,
+    "reviewSentimentEnd": null,
+    "snippetFromTitle": null,
+    "showRecommended": true,
+    "clientResponses": [],
+    "syndicationSource": null,
+    "userNickname": "DEIDRE",
+    "externalSource": "bazaarvoice",
+    "media": [
+      {
+        "id": "5d160455-1da0-4c22-be13-9754cf997308",
+        "reviewId": "497cecc4-3086-59e0-9f18-2d66bfed49ab",
+        "mediaType": "IMAGE",
+        "normalUrl": "https://i5.walmartimages.com/dfw/6e29e393-305c/k2-_3c55a9ea-20a9-4cb7-9732-77e1a549ed2e.v1.bin",
+        "thumbnailUrl": "https://i5.walmartimages.com/dfw/6e29e393-305c/k2-_3c55a9ea-20a9-4cb7-9732-77e1a549ed2e.v1.bin?odnWidth=150&odnHeight=150&odnBg=ffffff",
+        "caption": null,
+        "rating": 5
+      }
+    ],
+    "photos": [
+      {
+        "caption": null,
+        "id": "5d160455-1da0-4c22-be13-9754cf997308",
+        "sizes": {
+          "normal": {
+            "id": "normal",
+            "url": "https://i5.walmartimages.com/dfw/6e29e393-305c/k2-_3c55a9ea-20a9-4cb7-9732-77e1a549ed2e.v1.bin"
+          },
+          "thumbnail": {
+            "id": "thumbnail",
+            "url": "https://i5.walmartimages.com/dfw/6e29e393-305c/k2-_3c55a9ea-20a9-4cb7-9732-77e1a549ed2e.v1.bin?odnWidth=150&odnHeight=150&odnBg=ffffff"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "authorId": "82373de843ddb89e9a589336fb2715f45af5bd00c16f71e1aafc637e262086bc1dc5e663c668b970d61d45a38443992d",
+    "badges": [
+      {
+        "badgeType": "Custom",
+        "contentType": "REVIEW",
+        "id": "VerifiedPurchaser",
+        "glassBadge": {
+          "id": "VerifiedPurchaser",
+          "text": "Verified Purchase"
+        }
+      }
+    ],
+    "userLocation": null,
+    "negativeFeedback": 0,
+    "positiveFeedback": 0,
+    "rating": 1,
+    "recommended": null,
+    "reviewId": "331604639",
+    "reviewSubmissionTime": "1/9/2024",
+    "reviewText": "I purchased these beats as a gift, upon receiving them I was extremely disappointed. Add to the frustration the seller had the nerve to claim they didn't send the headphones. In my opinion. The whole company seems to be a scam, I would never order from this company again.",
+    "reviewTitle": "DO NOT BUY",
+    "reviewAspectStart": null,
+    "reviewAspectEnd": null,
+    "reviewSentimentStart": null,
+    "reviewSentimentEnd": null,
+    "snippetFromTitle": null,
+    "showRecommended": null,
+    "clientResponses": [],
+    "syndicationSource": null,
+    "userNickname": "khysia",
+    "externalSource": "bazaarvoice",
+    "media": [
+      {
+        "id": "96bd6f00-00bf-41d5-969a-a8a9072c7d62",
+        "reviewId": "8e5fa663-9aba-5444-a6ec-e3c60617879a",
+        "mediaType": "IMAGE",
+        "normalUrl": "https://i5.walmartimages.com/dfw/6e29e393-6cca/k2-_0cf3a373-bafa-42b1-a279-969e6c06089e.v1.bin",
+        "thumbnailUrl": "https://i5.walmartimages.com/dfw/6e29e393-6cca/k2-_0cf3a373-bafa-42b1-a279-969e6c06089e.v1.bin?odnWidth=150&odnHeight=150&odnBg=ffffff",
+        "caption": null,
+        "rating": 1
+      }
+    ],
+    "photos": [
+      {
+        "caption": null,
+        "id": "96bd6f00-00bf-41d5-969a-a8a9072c7d62",
+        "sizes": {
+          "normal": {
+            "id": "normal",
+            "url": "https://i5.walmartimages.com/dfw/6e29e393-6cca/k2-_0cf3a373-bafa-42b1-a279-969e6c06089e.v1.bin"
+          },
+          "thumbnail": {
+            "id": "thumbnail",
+            "url": "https://i5.walmartimages.com/dfw/6e29e393-6cca/k2-_0cf3a373-bafa-42b1-a279-969e6c06089e.v1.bin?odnWidth=150&odnHeight=150&odnBg=ffffff"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "authorId": "75b0f5e6a8255c8c597f93e8b9f29ef87399ebbfbb873302417d70c96f684a99a6cf19f3caf033952ab595db8de9fed1",
+    "badges": [
+      {
+        "badgeType": "Custom",
+        "contentType": "REVIEW",
+        "id": "VerifiedPurchaser",
+        "glassBadge": {
+          "id": "VerifiedPurchaser",
+          "text": "Verified Purchase"
+        }
+      }
+    ],
+    "userLocation": null,
+    "negativeFeedback": 1,
+    "positiveFeedback": 5,
+    "rating": 4,
+    "recommended": false,
+    "reviewId": "293282790",
+    "reviewSubmissionTime": "11/27/2022",
+    "reviewText": "Amazing sound quality and bass! The rose gold color is sleek and shiny. Only reason I didn't give it 5 stars is because of the ear cover area: after about 10 minutes of listening to music, the ear cushion part of the headphones start to ache the outer parts of my ears. Other than that, the headphones are a great buy.",
+    "reviewTitle": "Amazing Quality but Achy Ears",
+    "reviewAspectStart": null,
+    "reviewAspectEnd": null,
+    "reviewSentimentStart": null,
+    "reviewSentimentEnd": null,
+    "snippetFromTitle": null,
+    "showRecommended": false,
+    "clientResponses": [],
+    "syndicationSource": null,
+    "userNickname": "China",
+    "externalSource": "bazaarvoice",
+    "media": [
+      {
+        "id": "94ecd913-3cb6-4da1-8aad-a5997c842e75",
+        "reviewId": "e77320d7-fc2a-5903-b064-9cbcf58bdb1a",
+        "mediaType": "IMAGE",
+        "normalUrl": "https://i5.walmartimages.com/dfw/6e29e393-0e2b/k2-_b54f764a-4ff0-4c3a-9b62-14601748a42d.v1.bin",
+        "thumbnailUrl": "https://i5.walmartimages.com/dfw/6e29e393-0e2b/k2-_b54f764a-4ff0-4c3a-9b62-14601748a42d.v1.bin?odnWidth=150&odnHeight=150&odnBg=ffffff",
+        "caption": null,
+        "rating": 4
+      }
+    ],
+    "photos": [
+      {
+        "caption": null,
+        "id": "94ecd913-3cb6-4da1-8aad-a5997c842e75",
+        "sizes": {
+          "normal": {
+            "id": "normal",
+            "url": "https://i5.walmartimages.com/dfw/6e29e393-0e2b/k2-_b54f764a-4ff0-4c3a-9b62-14601748a42d.v1.bin"
+          },
+          "thumbnail": {
+            "id": "thumbnail",
+            "url": "https://i5.walmartimages.com/dfw/6e29e393-0e2b/k2-_b54f764a-4ff0-4c3a-9b62-14601748a42d.v1.bin?odnWidth=150&odnHeight=150&odnBg=ffffff"
+          }
+        }
+      }
+    ]
+  }
+]
