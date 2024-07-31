@@ -81,9 +81,6 @@ def fetch_reviews_data(url: str) -> List[Dict[str, Any]]:
         reviews.extend(page_reviews)
         page += 1
 
-        if page == 10:
-            break
-
     logging.info("Reviews data fetched successfully")
     return reviews
 
